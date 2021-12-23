@@ -44,14 +44,14 @@
     </p>
     <form novalidate>
       <div class="mail-wrapper">
-        <input id="mail" class="email-input" required type="email" placeholder="Email Address">
+        <input id="mail" class="email-input" required type="email" pattern=".*\.com$" placeholder="Email Address">
         <button class="btn">
           <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="20">
             <path fill="none" stroke="#FFF" stroke-width="2" d="M1 1l8.836 8.836L1 18.671" />
           </svg>
         </button>
       </div>
-      <div class="error">
+      <div class="error" aria-live="polite">
         <div class="error-icon" id="error-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <g fill="none" fill-rule="evenodd">
@@ -100,6 +100,8 @@
         errorMessage.textContent = "This field is required";
       } else if (email.validity.typeMismatch) {
         errorMessage.textContent = "Please provide a valid email";
+      } else if (email.validity.patternMismatch) {
+        errorMessage.textContent = "Please provide an email address ended with \".com\"."
       }
       errorIcon.className = "error-icon active";
     }
