@@ -50,6 +50,7 @@ Users should be able to:
 ### What I learned
 
 - 使用 JS 自定义表单校验的提示信息及样式
+- 不能用 js 获取或修改 svg 的 className，给它加个 wrapper
 - pseudo-classes related to forms, :valid, :invalid, :focus
 - 尽管 email 地址不一定必须以“.com“结尾，这里加上这个条件仅当做练习
 
@@ -59,5 +60,5 @@ Users should be able to:
 
 ### Useful resources
 
-- [表单校验中文版](https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Form_validation) - 介绍了在浏览器端如何利用 HTML5 或 JavaScript 进行表单校验。
+- [表单校验中文版](https://developer.mozilla.org/zh-CN/docs/Learn/Forms/Form_validation) - 介绍了如何利用 HTML5 和 JavaScript 进行表单校验，自定义提示信息和样式。
 - [表单校验英文版](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation)
