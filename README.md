@@ -52,7 +52,7 @@ Users should be able to:
 - 使用 JS 自定义表单校验的提示信息及样式
 - 不能用 js 获取或修改 svg 的 className，给它加个 wrapper
 - pseudo-classes related to forms, :valid, :invalid, :focus
-- 尽管 email 地址不一定必须以“.com“结尾，这里加上这个条件仅当做练习
+- although a valid email address doesn't have to include a dot, I add this constraint just for practice.
 
 ### Continued development
 
