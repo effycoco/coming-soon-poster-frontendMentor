@@ -74,6 +74,9 @@ h1 .line2 {
 .email-input::placeholder {
   color: hsl(0, 36%, 85%);
 }
+:focus {
+  outline-color: hsl(19, 80%, 85%);
+}
 .email-input:invalid:focus {
   outline: none;
   border: var(--soft-red) 2px solid;
